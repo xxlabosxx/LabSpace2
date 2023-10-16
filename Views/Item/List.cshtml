@@ -1,0 +1,14 @@
+@model LabSpace2.ViewModel.ItemListViewModel
+
+@{
+    ViewData["Title"] = "Cardapio";
+}
+
+<partial name="_Carousel"/>
+<h1>@Model.CategoriaAtual</h1>
+<div class="row">
+@foreach(var item in Model.Itens)
+{
+<partial name="_Card" for="@item"></partial>
+}
+</div>
