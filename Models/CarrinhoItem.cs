@@ -1,6 +1,6 @@
 using LabSpace2.Models;
 
-namespace InduMovel.Models
+namespace LabSpace2.Models
 {
     public class CarrinhoItem
     {

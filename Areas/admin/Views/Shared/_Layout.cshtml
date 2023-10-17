@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,10 +31,10 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminCategoria" asp-action="Index">Categoria</a>
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminCategoria" asp-action="Index">Categoria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminItem" asp-action="Index">Item</a>
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminItem" asp-action="Index">Item</a>
                         </li>
                     </ul>
                 </div>
@@ -70,4 +71,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

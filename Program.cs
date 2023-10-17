@@ -2,6 +2,9 @@ using LabSpace2.Context;
 using LabSpace2.Models;
 using LabSpace2.Repositories;
 using LabSpace2.Repositories.Interface;
+using LabSpace2.Repositories.Services;
+using LabSpace2.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,11 +13,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped(sp => Carrinho.GetCarrinhoCompra(sp));
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
-builder.Services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
-builder.Services.AddTransient<ICategoriaRepository , CategoriaRepository>();
-builder.Services.AddTransient<IItemRepository , ItemRepository>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddTransient<IItemRepository, ItemRepository>();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaulConnection")));
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
+
+builder.Services.AddScoped<IUserRoleInicial, UserRoleInicial>();
+
+builder.Services.AddIdentity<UserAcount, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
 var app = builder.Build();
 
@@ -30,8 +39,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+CriarPerfisUsuarios(app);
 app.UseSession();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -48,3 +59,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+static void CriarPerfisUsuarios(WebApplication app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+    using var scope = scopedFactory?.CreateScope();
+    var service = scope?.ServiceProvider.GetService<IUserRoleInicial>();
+    service?.SeedRoles();
+    service?.SeedUsers();
+}

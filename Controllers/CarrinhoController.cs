@@ -1,10 +1,12 @@
 using LabSpace2.Models;
 using LabSpace2.Repositories.Interface;
 using LabSpace2.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LabSpace2.Controllers
 {
+    [Authorize]
     public class CarrinhoController : Controller
     {
         private readonly Carrinho _carrinho;
