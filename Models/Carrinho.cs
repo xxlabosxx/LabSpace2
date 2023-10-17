@@ -1,4 +1,4 @@
-using InduMovel.Models;
+using LabSpace2.Models;
 using LabSpace2.Context;
 using Microsoft.EntityFrameworkCore;
 namespace LabSpace2.Models

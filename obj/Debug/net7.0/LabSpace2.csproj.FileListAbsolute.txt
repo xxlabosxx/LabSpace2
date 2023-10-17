@@ -280,3 +280,9 @@ C:\dev\LabSpace2\obj\Debug\net7.0\LabSpace2.pdb
 C:\dev\LabSpace2\obj\Debug\net7.0\LabSpace2.genruntimeconfig.cache
 C:\dev\LabSpace2\obj\Debug\net7.0\ref\LabSpace2.dll
 C:\dev\LabSpace2\obj\Debug\net7.0\scopedcss\Areas\admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\dev\LabSpace2\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\dev\LabSpace2\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\dev\LabSpace2\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\dev\LabSpace2\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\dev\LabSpace2\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\dev\LabSpace2\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

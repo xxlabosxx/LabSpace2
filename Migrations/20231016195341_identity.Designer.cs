@@ -3,6 +3,7 @@ using System;
 using LabSpace2.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LabSpace2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231016195341_identity")]
+    partial class identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.12");
@@ -97,100 +100,6 @@ namespace LabSpace2.Migrations
                     b.HasIndex("CategoriaId");
 
                     b.ToTable("Itens");
-                });
-
-            modelBuilder.Entity("LabSpace2.Models.Pedido", b =>
-                {
-                    b.Property<int>("PedidoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Bairro")
-                        .HasMaxLength(30)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Cep")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Cidade")
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Endereco1")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Endereco2")
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Estado")
-                        .HasMaxLength(10)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Numero")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("PedidoEnviado")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("PedidoEnviadoEm")
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("PedidoTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Telefone")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("TotalItensPedido")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("PedidoId");
-
-                    b.ToTable("Pedidos");
-                });
-
-            modelBuilder.Entity("LabSpace2.Models.PedidoItem", b =>
-                {
-                    b.Property<int>("PedidoItemId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ItemId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("PedidoId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("PedidoItemId");
-
-                    b.HasIndex("ItemId");
-
-                    b.HasIndex("PedidoId");
-
-                    b.ToTable("PedidoItens");
                 });
 
             modelBuilder.Entity("LabSpace2.Models.UserAcount", b =>
@@ -426,25 +335,6 @@ namespace LabSpace2.Migrations
                     b.Navigation("Categoria");
                 });
 
-            modelBuilder.Entity("LabSpace2.Models.PedidoItem", b =>
-                {
-                    b.HasOne("LabSpace2.Models.Item", "Item")
-                        .WithMany()
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("LabSpace2.Models.Pedido", "Pedido")
-                        .WithMany("PedidoItens")
-                        .HasForeignKey("PedidoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Item");
-
-                    b.Navigation("Pedido");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -494,11 +384,6 @@ namespace LabSpace2.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("LabSpace2.Models.Pedido", b =>
-                {
-                    b.Navigation("PedidoItens");
                 });
 #pragma warning restore 612, 618
         }
