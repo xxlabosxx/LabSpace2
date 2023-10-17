@@ -8,14 +8,22 @@ a.navbar-brand[b-4nr890f7n5] {
   word-break: break-all;
 }
 
-a[b-4nr890f7n5] {
-  color: #0077cc;
+#icone[b-4nr890f7n5]{
+  width: 50px;
+  height: 50px;
+}
+.koulen[b-4nr890f7n5]{
+  font-family: 'Koulen', cursive;
 }
 
-.btn-primary[b-4nr890f7n5] {
+#linhafooter[b-4nr890f7n5]{
+  line-height: 3px;
+  width: 200px;
+}
+
+.btn-warning[b-4nr890f7n5] {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #F2A900;
 }
 
 .nav-pills .nav-link.active[b-4nr890f7n5], .nav-pills .show > .nav-link[b-4nr890f7n5] {
@@ -45,7 +53,8 @@ button.accept-policy[b-4nr890f7n5] {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;
+  line-height: 40px;
+  background-color: #3131;
 }
 /* _content/LabSpace2/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
@@ -56,15 +65,25 @@ a.navbar-brand[b-o74bqtoawv] {
   text-align: center;
   word-break: break-all;
 }
-
-a[b-o74bqtoawv] {
-  color: #0077cc;
+#icone[b-o74bqtoawv]{
+  width: 50px;
+  height: 50px;
+}
+.koulen[b-o74bqtoawv]{
+  font-family: 'Koulen', sans-serif;
 }
 
-.btn-primary[b-o74bqtoawv] {
+.kumar[b-o74bqtoawv]{
+  font-family: 'Kumar One', serif;
+}
+
+#linhafooter[b-o74bqtoawv]{
+  line-height: 3px;
+  width: 200px;
+}
+.btn-warning[b-o74bqtoawv] {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #F2A900;
 }
 
 .nav-pills .nav-link.active[b-o74bqtoawv], .nav-pills .show > .nav-link[b-o74bqtoawv] {
@@ -94,5 +113,6 @@ button.accept-policy[b-o74bqtoawv] {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;
+  line-height: 40px;
+  background-color: #3131;
 }

@@ -6,15 +6,25 @@ a.navbar-brand[b-o74bqtoawv] {
   text-align: center;
   word-break: break-all;
 }
-
-a[b-o74bqtoawv] {
-  color: #0077cc;
+#icone[b-o74bqtoawv]{
+  width: 50px;
+  height: 50px;
+}
+.koulen[b-o74bqtoawv]{
+  font-family: 'Koulen', sans-serif;
 }
 
-.btn-primary[b-o74bqtoawv] {
+.kumar[b-o74bqtoawv]{
+  font-family: 'Kumar One', serif;
+}
+
+#linhafooter[b-o74bqtoawv]{
+  line-height: 3px;
+  width: 200px;
+}
+.btn-warning[b-o74bqtoawv] {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #F2A900;
 }
 
 .nav-pills .nav-link.active[b-o74bqtoawv], .nav-pills .show > .nav-link[b-o74bqtoawv] {
@@ -44,5 +54,6 @@ button.accept-policy[b-o74bqtoawv] {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;
+  line-height: 40px;
+  background-color: #3131;
 }

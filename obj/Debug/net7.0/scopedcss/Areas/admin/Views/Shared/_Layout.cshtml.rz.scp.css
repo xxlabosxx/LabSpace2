@@ -7,14 +7,22 @@ a.navbar-brand[b-4nr890f7n5] {
   word-break: break-all;
 }
 
-a[b-4nr890f7n5] {
-  color: #0077cc;
+#icone[b-4nr890f7n5]{
+  width: 50px;
+  height: 50px;
+}
+.koulen[b-4nr890f7n5]{
+  font-family: 'Koulen', cursive;
 }
 
-.btn-primary[b-4nr890f7n5] {
+#linhafooter[b-4nr890f7n5]{
+  line-height: 3px;
+  width: 200px;
+}
+
+.btn-warning[b-4nr890f7n5] {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #F2A900;
 }
 
 .nav-pills .nav-link.active[b-4nr890f7n5], .nav-pills .show > .nav-link[b-4nr890f7n5] {
@@ -44,5 +52,6 @@ button.accept-policy[b-4nr890f7n5] {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;
+  line-height: 40px;
+  background-color: #3131;
 }

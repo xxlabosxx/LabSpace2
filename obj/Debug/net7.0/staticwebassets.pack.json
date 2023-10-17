@@ -13,6 +13,38 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\card1.png",
+      "PackagePath": "staticwebassets\\imgs\\card1.png"
+    },
+    {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\card2.png",
+      "PackagePath": "staticwebassets\\imgs\\card2.png"
+    },
+    {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\card3.png",
+      "PackagePath": "staticwebassets\\imgs\\card3.png"
+    },
+    {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\carrossel1.png",
+      "PackagePath": "staticwebassets\\imgs\\carrossel1.png"
+    },
+    {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\carrossel2.png",
+      "PackagePath": "staticwebassets\\imgs\\carrossel2.png"
+    },
+    {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\carrossel3.png",
+      "PackagePath": "staticwebassets\\imgs\\carrossel3.png"
+    },
+    {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\iconefogo.png",
+      "PackagePath": "staticwebassets\\imgs\\iconefogo.png"
+    },
+    {
+      "Id": "C:\\dev\\LabSpace2\\wwwroot\\imgs\\laberasfood.png",
+      "PackagePath": "staticwebassets\\imgs\\laberasfood.png"
+    },
+    {
       "Id": "C:\\dev\\LabSpace2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
