@@ -7,9 +7,9 @@
 <h1 class="text-light">Index</h1>
 
 <p>
-    <a asp-action="Create">Criar Nova</a>
+    <a asp-action="Create" class="text-light">Criar Nova</a>
 </p>
-<table class="table-dark">
+<table class="table-dark" style="min-height: 60vh">
     <thead>
         <tr>
             <th>
@@ -20,14 +20,14 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="d-flex align-items-start">
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CategoriaId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.CategoriaId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.CategoriaId">Deletar</a>
+            <td class="ms-3">
+                <a asp-action="Edit" asp-route-id="@item.CategoriaId" class="text-warning">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.CategoriaId" class="text-warning">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.CategoriaId" class="text-warning">Deletar</a>
             </td>
         </tr>
 }

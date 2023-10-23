@@ -9,7 +9,7 @@
 <div class="text-light">
     <h4>Categoria</h4>
     <hr />
-    <dl class="row">
+    <dl class="row" style="min-height: 50vh">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
@@ -18,7 +18,7 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.CategoriaId">Editar</a>
-    <a asp-action="Index">Voltar para a lista</a>
+<div class="d-flex justify-content-between">
+    <a asp-action="Edit" asp-route-id="@Model?.CategoriaId" class="text-warning">Editar</a>
+    <a asp-action="Index" class="text-light">Voltar para a lista</a>
 </div>

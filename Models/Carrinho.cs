@@ -16,7 +16,6 @@ namespace LabSpace2.Models
         public static Carrinho GetCarrinhoCompra(IServiceProvider
         services)
         {
-
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
 
             var context = services.GetService<AppDbContext>();

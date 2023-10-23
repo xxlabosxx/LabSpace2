@@ -8,7 +8,7 @@
 
 <h4 class="text-light">Item</h4>
 <hr>
-<div class="row text-light">
+<div class="row text-light" >
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -58,7 +58,7 @@
                 <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.CategoriaId"></select>
                 <span asp-validation-for="CategoriaId" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <input type="submit" value="Salvar" class="btn btn-warning" />
             </div>
         </form>
@@ -66,6 +66,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Voltar para a lista</a>
+    <a asp-action="Index" class="text-light">Voltar para a lista</a>
 </div>
 

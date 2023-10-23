@@ -1,7 +1,7 @@
 @model Pedido
 <div class="text-center">
-<h2 class="text-white">Suas informações</h2>
-<h4 class="text-white">Você está a um passo de completar o seu pedido!</h4>
+<h2 class="text-white my-3">Suas informações</h2>
+<h4 class="text-white my-4">Você está a um passo de completar o seu pedido!</h4>
 </div>
 <form asp-action="Checkout" method="post" class="form-horizontal text-white d-flex flex-wrap col-6 mx-auto " style="min-height: 50vh;" role="form">
 
@@ -34,7 +34,7 @@
             <span asp-validation-for="Cep" class="text-danger"></span>
         </div>
         <div class="form-group col-md-4">
-            <label asp-for="Numero" class="control-label"></label>
+            <label asp-for="Numero" class="control-label">Número</label>
             <input asp-for="Numero" class="form-control" value="Araçtuba">
             <span asp-validation-for="Cidade" class="text-danger"></span>
         </div>
@@ -48,7 +48,7 @@
             <input asp-for="Email" class="form-control">
             <span asp-validation-for="Numero" class="text-danger"></span>
         </div>
-    
+   
     <br />
     </div>
 </form>
