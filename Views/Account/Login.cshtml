@@ -1,37 +1,27 @@
 @model LoginViewModel
-<table class="table">
-    <tr>
-        <td><img src="~/images/login1.jpg" class="img-fluid" asp-append-version="true" alt="Fazer o Login" /></td>
-        <td>
-            <div class="row">
-                <div class="col-9 col-md-9 col-lg-9">
-                    <h4>Login</h4>
-                    <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
-                        <hr />
-                        <div asp-validation-summary="All" class="text-danger"></div>
-                        <input type="hidden" asp-for="ReturnUrl" />
-                        <div class="form-group">
-                            <label asp-for="UserName" class="col-md-2 control-label"></label>
-                            <div class="col-md-6">
-                                <input asp-for="UserName" class="form-control" />
-                                <span asp-validation-for="UserName" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Password" class="col-md-2 control-label"></label>
-                            <div class="col-md-6">
-                                <input asp-for="Password" class="form-control" />
-                                <span asp-validation-for="Password" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-8 mt-2">
-                                <input type="submit" class="btn btn-success" value="Log in" />
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </td>
-    </tr>
-</table>
+<div class="row p-5 m-3 ">
+    <form asp-controller="Account" asp-action="Login" method="post" class="col-4 my-5 bg-black rounded-4 mx-auto p-5"
+        role="form">
+        <div class="d-flex justify-content-center mx-auto" id="icone">
+            <img src="~/imgs/iconefogo.png" alt="" class="" id="">
+        </div>
+        <h2 class="text-light text-center mt-3 p-3">Administração</h2>
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+
+        <label asp-for="UserName" class="control-label text-light "></label>
+        <input asp-for="UserName" class="form-control col-md-6" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+
+        <label asp-for="Password" class=" control-label text-light mt-4"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+
+        <div class="mt-5 d-flex justify-content-center">
+            <input type="submit" class="btn btn-warning col-12" value="Acessar" />
+        </div>
+        <hr>
+        
+
+    </form>
+</div>

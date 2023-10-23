@@ -1,29 +1,25 @@
 @model Pedido
-<h3>Você esta a um passo de completar o seu pedido</h3>
-<hr />
-<form asp-action="Checkout" method="post" class="form-horizontal" role="form">
-    <div class="row">
+<div class="text-center">
+<h2 class="text-white">Suas informações</h2>
+<h4 class="text-white">Você está a um passo de completar o seu pedido!</h4>
+</div>
+<form asp-action="Checkout" method="post" class="form-horizontal text-white d-flex flex-wrap col-6 mx-auto " style="min-height: 50vh;" role="form">
+
+    <div class="row" >
         <div class="form-group col-md-6">
             <label asp-for="Nome" class="control-label"></label>
             <input asp-for="Nome" class="form-control" />
             <span asp-validation-for="Nome" class="text-danger"></span>
         </div>
-    </div>
-    <div class="row">
-        <div class="form-group col-md-6">
-            <label asp-for="Endereco1" class="control-label"></label>
-            <input asp-for="Endereco1" class="form-control" />
-            <span asp-validation-for="Endereco1" class="text-danger"></span>
-        </div>
         <div class="form-group col-md-6">
             <label asp-for="Endereco2" class="control-label"></label>
-            <input asp-for="Endereco2" class="form-control" />
+            <input asp-for="Endereco2" class="form-control">
             <span asp-validation-for="Endereco2" class="text-danger"></span>
         </div>
         <div class="form-group col-md-6">
-            <label asp-for="Numero" class="control-label"></label>
-            <input asp-for="Numero" class="form-control" />
-            <span asp-validation-for="Numero" class="text-danger"></span>
+            <label asp-for="Cidade" class="control-label"></label>
+            <input asp-for="Cidade" class="form-control">
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
         <div class="form-group col-md-6">
             <label asp-for="Bairro" class="control-label"></label>
@@ -38,38 +34,29 @@
             <span asp-validation-for="Cep" class="text-danger"></span>
         </div>
         <div class="form-group col-md-4">
-            <label asp-for="Cidade" class="control-label"></label>
-            <input asp-for="Cidade" class="form-control" value="Araçtuba" />
+            <label asp-for="Numero" class="control-label"></label>
+            <input asp-for="Numero" class="form-control" value="Araçtuba">
             <span asp-validation-for="Cidade" class="text-danger"></span>
         </div>
         <div class="form-group col-md-4">
             <label asp-for="Estado" class="control-label"></label>
-            <input asp-for="Estado" class="form-control" value="SP" />
+            <input asp-for="Estado" class="form-control" value="SP">
             <span asp-validation-for="Estado" class="text-danger"></span>
         </div>
-    </div>
-    <div class="row">
-        <div class="form-group col-md-6">
-            <label asp-for="Telefone" class="control-label"></label>
-            <input asp-for="Telefone" class="form-control" />
-            <span asp-validation-for="Telefone" class="text-danger"></span>
-        </div>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-12">
             <label asp-for="Email" class="control-label"></label>
-            <input asp-for="Email" class="form-control" />
-            <span asp-validation-for="Email" class="text-danger"></span>
+            <input asp-for="Email" class="form-control">
+            <span asp-validation-for="Numero" class="text-danger"></span>
         </div>
-    </div>
+    
     <br />
-    <div class="row">
-        <div class="form-group col-md-3">
-            <input class="btn btn-success" type="submit" value="Concluir Pedido" />
-        </div>
-        &nbsp;
-        <div class="form-group col-md-3">
-
-            <a class="btn btn-outline-info" asp-controller="CarrinhoCompra" asp- action="Index">Retornar ao Carrinho</a>
-
-        </div>
-        </div>
+    </div>
 </form>
+<div class="col-md-3 mx-auto d-flex my-3">
+        <div class="form-group">
+            <input class="btn btn-success mt-4 ms-4" type="submit" value="Concluir Pedido" />
+        </div>
+        <div class="form-group"></div>
+            <a class="btn btn-warning mt-4 ms-4" asp-controller="CarrinhoCompra" asp- action="Index">Retornar ao Carrinho</a>
+        </div>
+</div>
