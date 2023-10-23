@@ -16,7 +16,7 @@
 </head>
 <body class="bg-dark">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow koulen">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow koulen">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="/imgs/iconefogo.png" alt="" id="icone">
@@ -31,10 +31,10 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminCategoria" asp-action="Index">Categoria</a>
+                            <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminCategoria" asp-action="Index">Categoria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminItem" asp-action="Index">Item</a>
+                            <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminItem" asp-action="Index">Item</a>
                         </li>
                     </ul>
                 </div>
@@ -46,24 +46,31 @@
             @RenderBody()
         </main>
     </div>
+   
 
-    <footer class="border-top footer opacity-100 text-light koulen">
-        <div class="text-center hstack mx-auto fs-5">
-            <div class="col-4">
-                <p class="pt-2">Funcionamento</p>
-                <hr class="mx-auto" id="linhafooter"/>
+    <footer class=" text-light border-top ">
+
+        <div class="row text-center hstack mx-auto fs-5">
+            <div class="col-12 col-sm-4">
+                <p class="pt-2  koulen">Funcionamento</p>
                 <p>Delivery: 18h-23h</p>
+                <hr class="mx-auto" id="linhafooter" />
             </div>
-                <div class="col-4">
-                <p class="pt-2">Local</p>
-                <hr class="mx-auto" id="linhafooter"/>
-                <p>Rua: KAKUTARO SHIGUEMOTO - GUARARAPES-SP</p>
+
+            <div class="col-12 col-sm-4">
+                <p class="pt-2  koulen">Local</p>
+                <p>Rua: KAKUTARO SHIGUEMOTO <br> GUARARAPES-SP</p>
+                <hr class="mx-auto" id="linhafooter" />
             </div>
-                <div class="col-4">
-                <p class="pt-2">Redes Sociais</p>
-                <hr class=" mx-auto" id="linhafooter"/>
+            
+            <div class="col-12 col-sm-4">
+                <p class="pt-2 koulen">Redes Sociais</p>
                 <p>Siga LABERAS FOOD</p>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <hr class=" mx-auto" id="linhafooter" />
             </div>
+
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -71,5 +78,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 
 </html>

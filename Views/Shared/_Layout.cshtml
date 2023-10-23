@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8" />
@@ -16,18 +16,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
 <body class="bg-dark">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow koulen">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow koulen">
             <div class="container-fluid ">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="/imgs/iconefogo.png" alt="" id="icone">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="">
                     <span class="navbar-toggler-icon"></span>
+                    </div>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 ">
@@ -35,12 +38,8 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            @if (User.IsInRole("Admin"))
-                            {
-
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
-
-                            }
+                            <a class="nav-link text-light" asp-area="Admin" asp-controller="Admin"
+                                asp-action="Index">Admin</a>
                         </li>
                         <li class="nav-item">
 
@@ -59,7 +58,7 @@
                         <li>
                             @await Component.InvokeAsync("CarrinhoResumo")
                         </li>
-                        <li>
+                        <li class="text-light">
                             @await Html.PartialAsync("_Login")
                         </li>
                     </ul>
@@ -73,24 +72,29 @@
 
     </main>
 
-    <footer class="text-light">
+    <footer class="text-light border-top">
 
-        <div class="text-center hstack mx-auto fs-5 koulen">
-            <div class="col-4">
-                <p class="pt-2">Funcionamento</p>
-                <hr class="mx-auto" id="linhafooter" />
+        <div class="row text-center hstack mx-auto fs-5 ">
+            <div class="col-12 col-sm-4">
+                <p class="pt-2  koulen">Funcionamento</p>
                 <p>Delivery: 18h-23h</p>
-            </div>
-            <div class="col-4">
-                <p class="pt-2">Local</p>
                 <hr class="mx-auto" id="linhafooter" />
-                <p>Rua: KAKUTARO SHIGUEMOTO - GUARARAPES-SP</p>
             </div>
-            <div class="col-4">
-                <p class="pt-2">Redes Sociais</p>
-                <hr class=" mx-auto" id="linhafooter" />
+
+            <div class="col-12 col-sm-4">
+                <p class="pt-2  koulen">Local</p>
+                <p>Rua: KAKUTARO SHIGUEMOTO <br> GUARARAPES-SP</p>
+                <hr class="mx-auto" id="linhafooter" />
+            </div>
+            
+            <div class="col-12 col-sm-4">
+                <p class="pt-2 koulen">Redes Sociais</p>
                 <p>Siga LABERAS FOOD</p>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <hr class=" mx-auto" id="linhafooter" />
             </div>
+
         </div>
     </footer>
 
