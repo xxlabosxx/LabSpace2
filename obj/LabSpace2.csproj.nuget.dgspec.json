@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\LabSpace2\\LabSpace2.csproj": {}
+    "C:\\dev\\LabSpace2\\LabSpace2.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\LabSpace2\\LabSpace2.csproj": {
+    "C:\\dev\\LabSpace2\\LabSpace2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\LabSpace2\\LabSpace2.csproj",
+        "projectUniqueName": "C:\\dev\\LabSpace2\\LabSpace2.csproj",
         "projectName": "LabSpace2",
-        "projectPath": "C:\\Dev\\LabSpace2\\LabSpace2.csproj",
-        "packagesPath": "C:\\Users\\aluno dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\LabSpace2\\obj\\",
+        "projectPath": "C:\\dev\\LabSpace2\\LabSpace2.csproj",
+        "packagesPath": "C:\\Users\\Aluno Dev\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\LabSpace2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aluno dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Aluno Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

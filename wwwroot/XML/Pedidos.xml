@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pedidos>
+  <PedidoId>1</PedidoId>
+  <ValorTotal>132</ValorTotal>
+  <Itens />
+</Pedidos>

@@ -9,149 +9,193 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LabSpace2
 build_property.RootNamespace = LabSpace2
-build_property.ProjectDir = C:\Dev\LabSpace2\
+build_property.ProjectDir = C:\dev\LabSpace2\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Dev\LabSpace2
+build_property.MSBuildProjectDirectory = C:\dev\LabSpace2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminCategoria/Create.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminCategoria/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yaWFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminCategoria/Delete.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminCategoria/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yaWFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminCategoria/Details.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminCategoria/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yaWFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminCategoria/Edit.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminCategoria/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yaWFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminCategoria/Index.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminCategoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yaWFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminItem/Create.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminItem/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5JdGVtXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminItem/Delete.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminItem/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5JdGVtXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminItem/Details.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminItem/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5JdGVtXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminItem/Edit.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminItem/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5JdGVtXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/AdminItem/Index.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminItem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5JdGVtXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/Admin/index.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedido/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedido/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedido/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedido/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedido/PedidoItens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9cUGVkaWRvSXRlbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminRelatorioVendas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5SZWxhdG9yaW9WZW5kYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminRelatorioVendas/Relatorio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5SZWxhdG9yaW9WZW5kYXNcUmVsYXRvcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminXml/GerarXml.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5YbWxcR2VyYXJYbWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminXml/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5YbWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminXml/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5YbWxcTGlzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/Admin/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5caW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/Shared/Error.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/_ViewImports.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/_ViewStart.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Account/Login.cshtml]
+[C:/dev/LabSpace2/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Account/Register.cshtml]
+[C:/dev/LabSpace2/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Carrinho/Index.cshtml]
+[C:/dev/LabSpace2/Views/Carrinho/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Home/Index.cshtml]
+[C:/dev/LabSpace2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Home/Privacy.cshtml]
+[C:/dev/LabSpace2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Item/Details.cshtml]
+[C:/dev/LabSpace2/Views/Item/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Item/List.cshtml]
+[C:/dev/LabSpace2/Views/Item/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Pedido/Checkout.cshtml]
+[C:/dev/LabSpace2/Views/Pedido/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Pedido/CheckoutCompleto.cshtml]
+[C:/dev/LabSpace2/Views/Pedido/CheckoutCompleto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0Q29tcGxldG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Shared/Components/CarrinhoResumo/Default.cshtml]
+[C:/dev/LabSpace2/Views/Shared/Components/CarrinhoResumo/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FycmluaG9SZXN1bW9cRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Shared/Components/CategoriaMenu/Default.cshtml]
+[C:/dev/LabSpace2/Views/Shared/Components/CategoriaMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmlhTWVudVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Shared/Error.cshtml]
+[C:/dev/LabSpace2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Shared/_Card.cshtml]
+[C:/dev/LabSpace2/Views/Shared/_Card.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Shared/_Carousel.cshtml]
+[C:/dev/LabSpace2/Views/Shared/_Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Shared/_Login.cshtml]
+[C:/dev/LabSpace2/Views/Shared/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/dev/LabSpace2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/_ViewImports.cshtml]
+[C:/dev/LabSpace2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Views/_ViewStart.cshtml]
+[C:/dev/LabSpace2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/LabSpace2/Areas/admin/Views/Shared/_Layout.cshtml]
+[C:/dev/LabSpace2/Areas/admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4nr890f7n5
 
-[C:/Dev/LabSpace2/Views/Shared/_Layout.cshtml]
+[C:/dev/LabSpace2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-o74bqtoawv

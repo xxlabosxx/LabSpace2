@@ -1,3 +1,4 @@
+using LabSpace2.Areas.admin.Services;
 using LabSpace2.Context;
 using LabSpace2.Models;
 using LabSpace2.Repositories;
@@ -10,6 +11,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<RelatorioVendasServices>();
+builder.Services.Configure<ConfiguraImagem>(builder.Configuration.GetSection("ConfImagemItem"));
 builder.Services.AddScoped(sp => Carrinho.GetCarrinhoCompra(sp));
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();

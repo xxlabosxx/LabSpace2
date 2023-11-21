@@ -11,7 +11,7 @@ namespace LabSpace2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20231016121803_inicial")]
-    partial class inicial
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
