@@ -1,8 +1,11 @@
 using LabSpace2.Areas.admin.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LabSpace2.Areas.admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminRelatorioVendasController : Controller
     {
         private readonly RelatorioVendasServices _relatorio;

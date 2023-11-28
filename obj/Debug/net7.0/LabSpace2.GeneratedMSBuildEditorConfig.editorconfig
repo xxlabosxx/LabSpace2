@@ -12,7 +12,7 @@ build_property.RootNamespace = LabSpace2
 build_property.ProjectDir = C:\dev\LabSpace2\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\dev\LabSpace2
 build_property._RazorSourceGeneratorDebug = 
 
@@ -54,6 +54,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/dev/LabSpace2/Areas/admin/Views/AdminItem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5JdGVtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedidoItem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9JdGVtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedidoItem/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9JdGVtXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedidoItem/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9JdGVtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedidoItem/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9JdGVtXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/dev/LabSpace2/Areas/admin/Views/AdminPedidoItem/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcQWRtaW5QZWRpZG9JdGVtXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/dev/LabSpace2/Areas/admin/Views/AdminPedido/Create.cshtml]

@@ -7,15 +7,12 @@
 <hr />
 <h3>Pedido : @Html.DisplayFor(model => @Model.Pedidos.PedidoId)</h3>
 <h3>Cliente : @Html.DisplayFor(model => @Model.Pedidos.Nome)</h3>
-<h3>Data : @Html.DisplayFor(model =>
-    @Model.Pedidos.PedidoEnviado)</h3>
-<h3>Entrega : @Html.DisplayFor(model =>
-    @Model.Pedidos.PedidoEnviadoEm)</h3>
+<h3>Data : @Html.DisplayFor(model => @Model.Pedidos.PedidoEnviado)</h3>
+<h3>Entrega : @Html.DisplayFor(model => @Model.Pedidos.PedidoEnviadoEm)</h3>
 <table class="table">
     @foreach (var item in @Model.Pedidos.PedidoItens)
     {
-        totalPedido += (Convert.ToDecimal(@item.Item.Preco) *
-        @item.Quantidade);
+        totalPedido += (Convert.ToDecimal(@item.Item.Preco) * @item.Quantidade);
         <tr>
             <td align="right">
                 <h3>@Html.DisplayFor(modelItem => item.Item.Nome)</h3>
@@ -29,6 +26,10 @@
             <td align="right">
                 <h3>(@Html.DisplayFor(modelItem => item.Quantidade))</h3>
             </td>
+            <td>
+                <a asp-controller="AdminPedidoItem" asp-action="Edit" asp-route-id="@item.PedidoItemId">Editar</a>
+                <a asp-controller="AdminPedidoItem" asp-action="Delete" asp-route-id="@item.PedidoItemId">Deletar</a>
+            </td>
         </tr>
     }
     <tr>
@@ -41,3 +42,4 @@
     </tr>
 </table>
 <a asp-action="Index" class="btn btn-outline-info">Retornar</a>
+<a asp-controller="AdminPedidoItem" asp-action="Create" asp-route-pedidoId="@Model.Pedidos.PedidoId" class="btn btn-outline-info">Adicionar mais itens</a>

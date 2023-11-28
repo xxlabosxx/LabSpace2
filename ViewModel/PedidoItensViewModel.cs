@@ -5,6 +5,6 @@ namespace LabSpace2.ViewModel
     public class PedidoItensViewModel
     {
         public Pedido Pedidos { get; set; }
-        public IEnumerable<PedidoItem> PedidoMoveis { get; set; }
+        public IEnumerable<PedidoItem> PedidoItens { get; set; }
     }
 }

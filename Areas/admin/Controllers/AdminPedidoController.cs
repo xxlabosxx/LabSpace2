@@ -9,6 +9,7 @@ using LabSpace2.Context;
 using LabSpace2.Models;
 using LabSpace2.ViewModel;
 using Microsoft.AspNetCore.Authorization;
+using ReflectionIT.Mvc.Paging;
 
 namespace LabSpace2.Areas.Admin.Controllers
 {
@@ -24,9 +25,20 @@ namespace LabSpace2.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminPedido
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string filtro, int pageindex = 1, string sort = "Nome")
         {
-            return View(await _context.Pedidos.ToListAsync());
+            var moveislist = _context.Pedidos.AsNoTracking().AsQueryable();
+
+            if (filtro != null)
+            {
+                moveislist = moveislist.Where(p => p.Nome.Contains(filtro));
+
+            }
+            var model = await PagingList.CreateAsync(moveislist, 5, pageindex, sort, "Nome");
+
+            model.RouteValue = new RouteValueDictionary{{"filtro", filtro}};
+
+            return View(model);
         }
 
         // GET: Admin/AdminPedido/Details/5
@@ -161,13 +173,10 @@ namespace LabSpace2.Areas.Admin.Controllers
         {
             return _context.Pedidos.Any(e => e.PedidoId == id);
         }
-        public IActionResult PedidoMoveis(int id)
+        public IActionResult PedidoItens(int id)
         {
 
-            var pedido = _context.Pedidos.Include(p =>
-
-            p.PedidoItens).ThenInclude(m => m.Item).FirstOrDefault(p => p.PedidoId
-            == id);
+            var pedido = _context.Pedidos.Include(p => p.PedidoItens).ThenInclude(m => m.Item).FirstOrDefault(p => p.PedidoId == id);
 
             if (pedido == null)
             {
@@ -176,7 +185,7 @@ namespace LabSpace2.Areas.Admin.Controllers
             var pedidoVm = new PedidoItensViewModel
             {
                 Pedidos = pedido,
-                PedidoMoveis = pedido.PedidoItens
+                PedidoItens = pedido.PedidoItens
             };
             return View(pedidoVm);
         }

@@ -1,4 +1,4 @@
-@model IEnumerable<LabSpace2.Models.Item>
+@model ReflectionIT.Mvc.Paging.PagingList<LabSpace2.Models.Item>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,12 +6,21 @@
 
 <h1 class="text-light">Index</h1>
 
+<form method="get" class="form-inline">
+    <input name="filtro" class="form-control" placeholder="filtro" value="@Model.RouteValue["Filtro"]" />
+    <button type="submit" class="btn btn-info">Procurar</button>
+</form>
+Total de Itens : @Model.TotalRecordCount
+<div>
+    <vc:pager paging-list="@Model"></vc:pager>
+</div>
+
 <p>
     <a asp-action="Create" class="text-light">Criar Novo</a>
 </p>
 <table class="table-dark" style="min-height: 60vh">
     <thead>
-        <tr >
+        <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
@@ -43,41 +52,42 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DescricaoCurta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DescricaoDetalhada)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preco)
-            </td>
-            <td>
-                <img src="@item.ImagemUrl" width="100px" asp-append-version="true">
-            </td>
-            <td>
-                <img src="@item.ImagemPequenaUrl" width="100px" asp-append-version="true">
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ativo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Destaque)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria.CategoriaId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ItemId" class="text-warning">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.ItemId" class="text-warning">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.ItemId" class="text-warning">Deletar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DescricaoCurta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DescricaoDetalhada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preco)
+                </td>
+                <td>
+                    <img src="@item.ImagemUrl" width="100px" asp-append-version="true">
+                </td>
+                <td>
+                    <img src="@item.ImagemPequenaUrl" width="100px" asp-append-version="true">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ativo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Destaque)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categoria.CategoriaId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ItemId" class="text-warning">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.ItemId" class="text-warning">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ItemId" class="text-warning">Deletar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

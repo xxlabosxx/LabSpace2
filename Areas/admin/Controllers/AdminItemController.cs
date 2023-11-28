@@ -9,6 +9,7 @@ using LabSpace2.Context;
 using LabSpace2.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
+using ReflectionIT.Mvc.Paging;
 
 namespace LabSpace2.Areas.Admin.Controllers
 {
@@ -28,10 +29,20 @@ namespace LabSpace2.Areas.Admin.Controllers
             _hostingEnvireoment = hostEnvironment;
         }
         // GET: Admin/AdminItem
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string filtro, int pageindex = 1, string sort = "Nome")
         {
-            var appDbContext = _context.Itens.Include(i => i.Categoria);
-            return View(await appDbContext.ToListAsync());
+            var moveislist = _context.Itens.AsNoTracking().AsQueryable();
+
+            if (filtro != null)
+            {
+                moveislist = moveislist.Where(p => p.Nome.Contains(filtro));
+
+            }
+            var model = await PagingList.CreateAsync(moveislist, 5, pageindex, sort, "Nome");
+
+            model.RouteValue = new RouteValueDictionary{{"filtro", filtro}};
+
+            return View(model);
         }
 
         // GET: Admin/AdminItem/Details/5
@@ -129,7 +140,7 @@ namespace LabSpace2.Areas.Admin.Controllers
             {
                 Deletefile(item.ImagemPequenaUrl);
                 string imagemcr = await SalvarArquivo(Imagemcurta);
-                item.ImagemPequenaUrl= imagemcr;
+                item.ImagemPequenaUrl = imagemcr;
             }
 
 
@@ -188,9 +199,24 @@ namespace LabSpace2.Areas.Admin.Controllers
             var item = await _context.Itens.FindAsync(id);
             if (item != null)
             {
+                try
+                {
+                    _context.Itens.Remove(item);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateException ex)
+                {
+                    if (ex.InnerException.ToString().Contains("FOREIGN KEY"))
+                    {
+                        ViewData["Erro"] = "Esse item não pode ser excluido, pois já está sendo utilizado.";
+                        return View();
+                    }
+                }
+
                 Deletefile(item.ImagemPequenaUrl);
                 Deletefile(item.ImagemUrl);
                 _context.Itens.Remove(item);
+
             }
 
             await _context.SaveChangesAsync();

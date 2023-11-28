@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using LabSpace2.Context;
 using LabSpace2.Models;
 using Microsoft.AspNetCore.Authorization;
+using ReflectionIT.Mvc.Paging;
 
 namespace LabSpace2.Areas.Admin.Controllers
 {
@@ -23,11 +24,20 @@ namespace LabSpace2.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminCategoria
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string filtro, int pageindex = 1, string sort = "Nome")
         {
-              return _context.Categorias != null ? 
-                          View(await _context.Categorias.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.Categorias'  is null.");
+            var moveislist = _context.Categorias.AsNoTracking().AsQueryable();
+
+            if (filtro != null)
+            {
+                moveislist = moveislist.Where(p => p.Nome.Contains(filtro));
+
+            }
+            var model = await PagingList.CreateAsync(moveislist, 5, pageindex, sort, "Nome");
+
+            model.RouteValue = new RouteValueDictionary{{"filtro", filtro}};
+
+            return View(model);
         }
 
         // GET: Admin/AdminCategoria/Details/5
@@ -150,17 +160,30 @@ namespace LabSpace2.Areas.Admin.Controllers
             }
             var categoria = await _context.Categorias.FindAsync(id);
             if (categoria != null)
+
             {
-                _context.Categorias.Remove(categoria);
+                try
+                {
+                    _context.Categorias.Remove(categoria);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateException ex)
+                {
+                    if (ex.InnerException.ToString().Contains("FOREIGN KEY"))
+                    {
+                        ViewData["Erro"] = "Essa categoria não pode ser excluida, pois já está sendo utilizada.";
+                        return View();
+                    }
+                }
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CategoriaExists(int id)
         {
-          return (_context.Categorias?.Any(e => e.CategoriaId == id)).GetValueOrDefault();
+            return (_context.Categorias?.Any(e => e.CategoriaId == id)).GetValueOrDefault();
         }
     }
 }

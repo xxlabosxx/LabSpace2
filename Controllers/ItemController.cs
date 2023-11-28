@@ -46,19 +46,19 @@ namespace LabSpace2.Controllers
         public IActionResult Search(string searchString)
         {
 
-            IEnumerable<Item> moveis;
+            IEnumerable<Item> itens;
             string categoriaAtual = string.Empty;
             if (string.IsNullOrEmpty(searchString))
             {
-                moveis = _itemRespository.Itens.OrderBy(m => m.Nome);
+                itens = _itemRespository.Itens.OrderBy(m => m.Nome);
                 categoriaAtual = "Todos os Itens";
             }
             else
             {
-                moveis = _itemRespository.Itens.Where(m =>
+                itens = _itemRespository.Itens.Where(m =>
                 m.Nome.ToLower() == searchString.ToLower()).OrderBy(m => m.Nome);
 
-                if (moveis.Any())
+                if (itens.Any())
                 {
                     categoriaAtual = "Itens";
                 }
@@ -70,7 +70,7 @@ namespace LabSpace2.Controllers
             return View("~/Views/Item/List.cshtml", new ItemListViewModel
             {
                 CategoriaAtual = categoriaAtual,
-                Itens = moveis
+                Itens = itens
             });
 
         }
